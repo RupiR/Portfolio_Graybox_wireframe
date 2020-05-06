@@ -1,52 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HTML wireframe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Portfolio Grey Wireframe</title>
   </head>
   <body>
-    <nav role="navigation">
-      <div class="top-nav">
-        <ul>
-          <li><a href="#blue">Home</a></li>
-          <li><a href="#orange">About</a></li>
-          <li><a href="#red">Code</a></li>
-          <li><a href="#green">Projects</a></li>
-          <li><a href="#yellow">Contact</a></li>
-        </ul>
+    <header>
+      <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <div id="myLinks">
+          <a href="#about">About</a>
+          <a href="#blog">Blog</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-    </nav>
-    <main role="main">
-      <header class="nameontop">
-        <h1>Rupali Rajput</h1>
-      </header>
+    </header>
+    <main>
+      <div class="pagecontainer">
+        <div class="splashcontainer">
+          <div class="splashimage">Hero Image</div>
+        </div>
 
-      <section class="blue" id="blue">
-        About Me: A little write up here about me and what I am about.
+        <section class="contentsection">
+          <div class="sectioncontainer">
+            <div class="sectionimage"><a href="#about">About</a></div>
+          </div>
+
+          <div class="sectioncontainer">
+            <div class="sectionimage"><a href="#blog">Blog</a></div>
+          </div>
+
+          <div class="sectioncontainer">
+            <div class="sectionimage"><a href="#portfolio">Portfolio</a></div>
+          </div>
+
+          <div class="sectioncontainer">
+            <div class="sectionimage"><a href="#contact">Contact</a></div>
+          </div>
+        </section>
+      </div>
+
+      <section>
+        <div class="fullpage">
+          <div class="splashimage" id="about">About</div>
+          <div class="mytext">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </div>
+        </div>
       </section>
 
-      <section class="orange" id="orange">
-        Code: A little bit here about the frameworks and languages I work on.
+      <section>
+        <div class="fullpage">
+          <div class="splashimage" id="blog">Blog</div>
+          <div class="mytext">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </div>
+        </div>
       </section>
 
-      <section class="red" id="red">
-        Projects: Highlight Project 1
+      <section>
+        <div class="fullpage">
+          <div class="splashimage" id="portfolio">Portfolio</div>
+          <div class="mytext">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </div>
+        </div>
       </section>
 
-      <section class="green" id="green">
-        Projects: Highlight Project 2
-      </section>
-
-      <section class="yellow" id="yellow">
-        Contact Me: Information on how you can find me and contact me.
+      <section>
+        <div class="fullpage">
+          <div class="splashimage" id="contact">Contact</div>
+          <div class="mytext">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </div>
+        </div>
       </section>
     </main>
-    <footer role="content-info">Rupali Rajput - Software Engineer</footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

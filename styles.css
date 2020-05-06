@@ -1,71 +1,130 @@
-.top-nav {
-  text-align: center;
-  justify-content: center;
-}
-
-.top-nav ul {
-  padding: 0;
+* {
   margin: 0;
-  display: flex;
 }
 
-.top-nav li {
-  list-style-type: none;
-  font-size: 16px;
-  border: none;
-  width: 80%;
-  padding: 0;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
+.topnav {
+  overflow: hidden;
+  background-color: grey;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: darkgrey;
+  color: white;
+}
+
+.splashcontainer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.splashimage {
+  width: 90vw;
+  height: 250px;
+  background-color: darkgrey;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.nameontop {
+.sectioncontainer {
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.blue {
-  width: 100vw;
-  height: 100vh;
-  background-color: grey;
-}
-
-.orange {
-  width: 100vw;
-  height: 100vh;
-  background-color: lightgrey;
-}
-
-.red {
-  width: 100vw;
-  height: 100vh;
-  background-color: grey;
-}
-
-.green {
-  width: 100vw;
-  height: 100vh;
-  background-color: lightgrey;
-}
-
-.yellow {
-  width: 100vw;
-  height: 450px;
-  background-color: grey;
-}
-
-footer {
+.sectionimage {
+  width: 90vw;
+  height: 100px;
+  background-color: darkgrey;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+}
+
+.fullpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fullpage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.mytext {
+  padding: 10px;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 600px) {
+  .pagecontainer {
+    height: 100vw;
+  }
+
+  .contentsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .sectioncontainer {
+    align-items: center;
+    margin: 20px;
+  }
+
+  .sectionimage {
+    width: 125px;
+    height: 200px;
+    background-color: darkgrey;
+  }
+
+  .splashimage {
+    width: 90vw;
+    height: 150px;
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
